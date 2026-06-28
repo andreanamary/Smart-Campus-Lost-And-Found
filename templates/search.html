@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Search Items</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🔍 Search Lost Items</h1>
+
+</header>
+
+<nav>
+
+<a href="/">Home</a>
+
+<a href="/dashboard">Dashboard</a>
+
+<a href="/report_lost">Report Lost Item</a>
+
+<a href="/report_found">Report Found Item</a>
+
+</nav>
+
+<div class="container">
+
+<h2>Recently Reported Lost Items</h2>
+
+<table style="width:100%;border-collapse:collapse;">
+
+<tr style="background:#1e3a8a;color:white;">
+
+<th style="padding:12px;">Item</th>
+
+<th>Category</th>
+
+<th>Location</th>
+
+<th>Date</th>
+
+<th>Description</th>
+
+</tr>
+
+{% for item in items %}
+
+<tr>
+
+<td style="padding:10px;">{{ item[0] }}</td>
+
+<td>{{ item[1] }}</td>
+
+<td>{{ item[2] }}</td>
+
+<td>{{ item[3] }}</td>
+
+<td>{{ item[4] }}</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+</div>
+
+<footer>
+
+©2026 Smart Campus Lost & Found Portal
+
+</footer>
+
+</body>
+
+</html>

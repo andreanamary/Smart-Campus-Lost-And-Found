@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<header>
+<h1>🎒 Smart Campus Lost & Found Management System</h1>
+</header>
+
+<nav>
+<a href="/">Home</a>
+<a href="/report_lost">Report Lost Item</a>
+<a href="/report_found">Report Found Item</a>
+<a href="/search">Search</a>
+<a href="/logout">Logout</a>
+</nav>
+
+<div class="container">
+
+<h2>Dashboard</h2>
+
+<div class="cards">
+
+<div class="card">
+<h2>{{ total_users }}</h2>
+<p>Total Registered Users</p>
+</div>
+
+<div class="card">
+<h2>{{ total_lost }}</h2>
+<p>Total Lost Items</p>
+</div>
+
+<div class="card">
+<h2>{{ total_found }}</h2>
+<p>Total Found Items</p>
+</div>
+
+</div>
+
+<br>
+
+<a href="/report_lost">
+<button>📦 Report Lost Item</button>
+</a>
+
+<a href="/report_found">
+<button>🎒 Report Found Item</button>
+</a>
+
+<a href="/search">
+<button>🔍 Search Items</button>
+</a>
+
+</div>
+
+<footer>
+
+©2026 Smart Campus Lost & Found Portal
+
+</footer>
+
+</body>
+</html>
