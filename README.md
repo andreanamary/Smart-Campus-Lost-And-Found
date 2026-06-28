@@ -1,22 +1,34 @@
-# Smart Campus Lost & Found Management System
+# 🎒 Smart Campus Lost & Found Management System
 
-## Description
+## AWS Cloud Internship Project
 
-A Flask-based web application developed for managing lost and found items inside a college campus.
+### Developed By
 
-## Features
+**Andreana Mary**
 
-- Student Registration
-- Student Login
+---
+
+## 📖 Project Description
+
+The Smart Campus Lost & Found Management System is a Flask-based web application developed to help students report, search, and manage lost and found items within a college campus.
+
+---
+
+## ✨ Features
+
+- User Registration
+- User Login
 - Dashboard
 - Dashboard Statistics
-- Report Lost Item
-- Report Found Item
+- Report Lost Items
+- Report Found Items
 - Search Lost Items
 - SQLite Database
-- Responsive Interface
+- Responsive User Interface
 
-## Technologies Used
+---
+
+## 🛠 Technologies Used
 
 - Python
 - Flask
@@ -25,6 +37,11 @@ A Flask-based web application developed for managing lost and found items inside
 - CSS
 - JavaScript
 
-## Developed By
+---
 
-Andreana Mary
+## 🚀 Future Improvements
+
+- Image Upload
+- Email Notifications
+- Admin Panel
+- Password Encryption
